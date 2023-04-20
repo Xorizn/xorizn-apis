@@ -9,7 +9,7 @@
 ## Other Scraper
 
 - [DOWNLOADS-API](https://github.com/Xorizn/xorizn-downloads)
-- [SEARCH-API](https://github.com/Xorizn/xorizn-search)
+- [SEARCH-API](https://github.com/Xorizn/xorizn-api#stalk)
 
 # List API
 
@@ -34,7 +34,7 @@
 ```http
   GET api/stalk/:param
 ```
-
+<div id="stalk"></div>
 | Param                   | req param  | req query  | Method  | Example     |
 | :----------             | :-------   | :-------   |:--      | :--         |
 | `/instagram/:type`  | `type:` *profile*, *story*, *post*, *highlights*, *cash* | `username` | GET | [`=>`](https://xorizn-apis-v1.vercel.app/api/stalk/instagram/profile?username=farrhnn)
