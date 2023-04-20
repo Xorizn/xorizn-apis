@@ -2,7 +2,7 @@
 
 <h1>Api Scraper</h1>
 
-![xorizn-downloads](https://socialify.git.ci/xorizn/xorizn-apis/image?description=1&forks=1&issues=1&logo=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F26%2F91%2Ff2%2F2691f2fa1a0f078f5f274edf7fea6763.png&owner=1&pulls=1&stargazers=1&theme=Light)
+![xorizn-downloads](https://socialify.git.ci/Xorizn/xorizn-apis/image?font=Jost&forks=1&issues=1&logo=https%3A%2F%2Fraw.githubusercontent.com%2FXorizn%2Fimage%2Fmain%2Flight-node-opened-svgrepo-com.svg%3Ftoken%3DGHSAT0AAAAAACAVCJHFBZ67ZLA6JXXDKK5UZCAWG4Q&name=1&owner=1&pattern=Signal&pulls=1&stargazers=1&theme=Light)
 
 </div>
 
