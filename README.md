@@ -6,6 +6,11 @@
 
 </div>
 
+## Other Scraper
+
+- [DOWNLOADS-API](https://github.com/Xorizn/xorizn-downloads)
+- [SEARCH-API](https://github.com/Xorizn/xorizn-search)
+
 # List API
 
 ### News Api's
