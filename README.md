@@ -9,7 +9,7 @@
 ## Other Scraper
 
 - [DOWNLOADS-API](https://github.com/Xorizn/xorizn-downloads)
-- [SEARCH-API](https://github.com/Xorizn/xorizn-api#stalk)
+- [SEARCH-API](https://github.com/Xorizn/xorizn-apis#stalk)
 
 # List API
 
