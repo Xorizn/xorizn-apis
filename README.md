@@ -9,11 +9,11 @@
 ## Other Scraper
 
 - [DOWNLOADS-API](https://github.com/Xorizn/xorizn-downloads)
-- [SEARCH-API](https://github.com/Xorizn/xorizn-apis#stalk)
+- [SEARCH-API](https://github.com/Xorizn/xorizn-apis#Stalk)
 
 # List API
 
-### News Api's
+### News
 ```http
   GET api/news/:param
 ```
@@ -30,11 +30,11 @@
 | `/tixid`                |            | GET    | [`=>`](https://xorizn-apis-v1.vercel.app/api/news/tixid)    |
 | `/v2/:type`             | `type:` *cnn-news*, *cnbc-news*, *republika-news*, *tempo-news*, *kumparan-news*, *okezone-news*, *bbc-news*, *vice*, *suara*, *voa* | GET    | [`=>`](https://xorizn-apis-v1.vercel.app/api/news/v2/cnn-news)    |
 
-### Stalk Api's
+### Stalk
 ```http
   GET api/stalk/:param
 ```
-<div id="stalk"></div>
+
 | Param                   | req param  | req query  | Method  | Example     |
 | :----------             | :-------   | :-------   |:--      | :--         |
 | `/instagram/:type`  | `type:` *profile*, *story*, *post*, *highlights*, *cash* | `username` | GET | [`=>`](https://xorizn-apis-v1.vercel.app/api/stalk/instagram/profile?username=farrhnn)
