@@ -6,6 +6,36 @@
 
 </div>
 
+# List API
+
+### News Api's
+```http
+  GET api/news/:param
+```
+
+| Param                   | req param  | Method | Example     |
+| :----------             | :-------   | :--    | :--         |
+| `/gempa`                |            | GET    | [`=>`](https://xorizn-apis-v1.vercel.app/api/news/gempa)    |
+| `/gempa2`               |            | GET    | [`=>`](https://xorizn-apis-v1.vercel.app/api/news/gempa2)    |
+| `/covid/world`          |            | GET    | [`=>`](https://xorizn-apis-v1.vercel.app/api/news/covid/world)    |
+| `/covid/country/:negara`| `negara:` all country names around the world| GET    | [`=>`](https://xorizn-apis-v1.vercel.app/api/news/covid/country/indonesia)    |
+| `/kompas/:type`         | `type:` *global*, *news*, *terpopuler* | GET    | [`=>`](https://xorizn-apis-v1.vercel.app/api/news/kompas/news)    |
+| `/cnbc/:type`           | `type:` *news*, *market*, *investment*, *entrepreneur*, *syariah*, *tech*, *lifestyle* | GET    | [`=>`](https://xorizn-apis-v1.vercel.app/api/news/cnbc/news)    |
+| `/rumahkeadilan`        |            | GET    | [`=>`](https://xorizn-apis-v1.vercel.app/api/news/rumahkeadilan)    |
+| `/tixid`                |            | GET    | [`=>`](https://xorizn-apis-v1.vercel.app/api/news/tixid)    |
+| `/v2/:type`             | `type:` *cnn-news*, *cnbc-news*, *republika-news*, *tempo-news*, *kumparan-news*, *okezone-news*, *bbc-news*, *vice*, *suara*, *voa* | GET    | [`=>`](https://xorizn-apis-v1.vercel.app/api/news/v2/cnn-news)    |
+
+### Stalk Api's
+```http
+  GET api/stalk/:param
+```
+
+| Param                   | req param  | req query  | Method  | Example     |
+| :----------             | :-------   | :-------   |:--      | :--         |
+| `/instagram/:type`  | `type:` *profile*, *story*, *post*, *highlights*, *cash* | `username` | GET | [`=>`](https://xorizn-apis-v1.vercel.app/api/stalk/instagram/profile?username=farrhnn)
+| `/github/:type`  | `type:` *profile*, *repo* | `username` | GET | [`=>`](https://xorizn-apis-v1.vercel.app/api/stalk/github/profile?username=xorizn)
+| `/npm`  |  | `packages` | GET | [`=>`](https://xorizn-apis-v1.vercel.app/api/stalk/npm?packages=nhentai)
+
 ## Installation
 
 If you want to add this project in your own machine, you can install this project by following the step below
