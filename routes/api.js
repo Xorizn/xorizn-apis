@@ -23,7 +23,6 @@ async function GetBuff(url) {
 const PromiseRes = (hasil) => {
   return { developer: '@xorizn', status: 200, result: hasil }
 }
-
 //Module downloads
 const { textpro } = require('../lib/apis/textpro')
 const { Base } = require('../lib/apis/base')
@@ -32,7 +31,630 @@ const { Surah, JadwalSholat } = require('../lib/apis/islam')
 const { InfoGempa, InfoGempa_2, Covid_World, Covid_Country, Kompas_Global, Kompas_News, Kompas_Terpopuler, CnBc, RumahKeadilan } = require('../lib/apis/news')
 const { GithubRepo, GithubStalk, StoryIG } = require('../lib/apis/stalk')
 const { MalSearchAnime, MalSearchCharacter, MalSearchManga, MalUpcoming } = require('../lib/apis/anime')
-const { WaifuGenerator, QuotesAnime, NekopoiDcVideo, DarkJokes, Waifu, Nsfw, Sfw } = require('../lib/apis/random')
+const { WaifuGenerator, QuotesAnime, NekopoiDcVideo, Hentai, DarkJokes, Waifu, Nsfw, Sfw } = require('../lib/apis/random')
+const { ListHero, Hero, TixID } = require('../lib/apis/search')
+
 //function
-function _0x5752(_0x115de8,_0x5eb5c9){const _0x5764db=_0x5764();return _0x5752=function(_0x5752c6,_0x1da2f4){_0x5752c6=_0x5752c6-0xb9;let _0x566ba0=_0x5764db[_0x5752c6];return _0x566ba0;},_0x5752(_0x115de8,_0x5eb5c9);}function _0x5764(){const _0x231501=['2bBEJPA','Input\x20parameter\x20\x27gcname\x27','Input\x20parameter\x20\x27url\x27','Input\x20parameter\x20\x27icon\x27','Input\x20parameter\x20\x27user\x27','Input\x20parameter\x20\x27nomer\x27','5744xnYCpY','337203OaebfR','25LjcShU','734808dIeVFH','Input\x20parameter\x20\x27name\x27','Input\x20parameter\x20\x27gcicon\x27','12985yCGvEP','Input\x20parameter\x20\x27username\x27','Input\x20parameter\x20number\x20of\x20mem','Input\x20parameter\x20\x27text2\x27','Input\x20parameter\x20\x27avatar\x27','4486263PWMooD','11LoNDQj','Input\x20parameter\x20\x27picurl\x27','Input\x20parameter\x20\x27apikey\x27','Input\x20parameter\x20\x27search\x27','6978204NJEKPN','112230tjFCWr','3250790myPVbb'];_0x5764=function(){return _0x231501;};return _0x5764();}const _0x39820d=_0x5752;(function(_0x3c64f1,_0x122ac0){const _0x551f76=_0x5752,_0x239aa=_0x3c64f1();while(!![]){try{const _0x976211=-parseInt(_0x551f76(0xc0))/0x1+-parseInt(_0x551f76(0xb9))/0x2*(-parseInt(_0x551f76(0xca))/0x3)+-parseInt(_0x551f76(0xc2))/0x4+parseInt(_0x551f76(0xc1))/0x5*(parseInt(_0x551f76(0xd0))/0x6)+-parseInt(_0x551f76(0xc5))/0x7*(parseInt(_0x551f76(0xbf))/0x8)+parseInt(_0x551f76(0xcf))/0x9+parseInt(_0x551f76(0xd1))/0xa*(parseInt(_0x551f76(0xcb))/0xb);if(_0x976211===_0x122ac0)break;else _0x239aa['push'](_0x239aa['shift']());}catch(_0x2b8f29){_0x239aa['push'](_0x239aa['shift']());}}}(_0x5764,0xcc3ea));const mess={'null_api':{'developer':develop,'mess':_0x39820d(0xcd)},'null_url':{'developer':develop,'mess':_0x39820d(0xbb)},'null_username':{'developer':develop,'mess':_0x39820d(0xc6)},'null_search':{'developer':develop,'mess':_0x39820d(0xce)},'null_icon':{'developer':develop,'mess':_0x39820d(0xbc)},'null_user':{'developer':develop,'mess':_0x39820d(0xbd)},'null_bgurl':{'developer':develop,'mess':'Input\x20parameter\x20\x27bgurl\x27'},'null_name':{'developer':develop,'mess':_0x39820d(0xc3)},'null_gcname':{'developer':develop,'mess':_0x39820d(0xba)},'null_picurl':{'developer':develop,'mess':_0x39820d(0xcc)},'null_avatar':{'developer':develop,'mess':_0x39820d(0xc9)},'null_gcicon':{'developer':develop,'mess':_0x39820d(0xc4)},'null_iminator':{'developer':develop,'mess':'Input\x20parameter\x20\x27iminator\x27'},'null_text':{'developer':develop,'mess':'Input\x20parameter\x20\x27text\x27'},'null_text2':{'developer':develop,'mess':_0x39820d(0xc8)},'null_mem':{'developer':develop,'mess':_0x39820d(0xc7)},'null_nomer':{'developer':develop,'mess':_0x39820d(0xbe)},'is_url':{'developer':develop,'mess':'Insert\x20url!'}};
-const _0x77d7f1 = _0x4147; function _0x4147(_0x12fb91, _0x46c3fe) { const _0x358515 = _0x3585(); return _0x4147 = function (_0x4147b9, _0x43d655) { _0x4147b9 = _0x4147b9 - 0x127; let _0x54359d = _0x358515[_0x4147b9]; return _0x54359d; }, _0x4147(_0x12fb91, _0x46c3fe); } (function (_0x1b4794, _0x2543ae) { const _0x316067 = _0x4147, _0x2da213 = _0x1b4794(); while (!![]) { try { const _0x3f8b14 = -parseInt(_0x316067(0x179)) / 0x1 * (-parseInt(_0x316067(0x16b)) / 0x2) + parseInt(_0x316067(0x140)) / 0x3 * (parseInt(_0x316067(0x1ef)) / 0x4) + -parseInt(_0x316067(0x159)) / 0x5 * (-parseInt(_0x316067(0x13d)) / 0x6) + -parseInt(_0x316067(0x1a3)) / 0x7 * (parseInt(_0x316067(0x1cf)) / 0x8) + -parseInt(_0x316067(0x1c6)) / 0x9 * (-parseInt(_0x316067(0x12f)) / 0xa) + parseInt(_0x316067(0x188)) / 0xb * (-parseInt(_0x316067(0x175)) / 0xc) + parseInt(_0x316067(0x1aa)) / 0xd; if (_0x3f8b14 === _0x2543ae) break; else _0x2da213['push'](_0x2da213['shift']()); } catch (_0x10a678) { _0x2da213['push'](_0x2da213['shift']()); } } }(_0x3585, 0xd0751), router[_0x77d7f1(0x1c4)](_0x77d7f1(0x173), async (_0x4cb3c3, _0x367033, _0x51675e) => { const _0x77cf09 = _0x77d7f1; try { const _0x80c2ec = _0x4cb3c3[_0x77cf09(0x1ee)][_0x77cf09(0x1b9)], _0x586f21 = _0x4cb3c3[_0x77cf09(0x1e1)][_0x77cf09(0x1a6)], _0x1e4bf8 = _0x4cb3c3[_0x77cf09(0x1e1)][_0x77cf09(0x150)]; if (_0x80c2ec == _0x77cf09(0x198) && _0x586f21) { var _0x5ad56d = await Base(_0x77cf09(0x12c), _0x586f21); _0x367033[_0x77cf09(0x14e)](PromiseRes(_0x5ad56d))[_0x77cf09(0x1ec)](0xc8); } else { if (_0x80c2ec == _0x77cf09(0x198) && _0x1e4bf8) { var _0x5ad56d = await Base('b64dec', _0x1e4bf8); _0x367033['json'](PromiseRes(_0x5ad56d))[_0x77cf09(0x1ec)](0xc8); } else { if (_0x80c2ec == 'base32' && _0x586f21) { var _0x5ad56d = await Base(_0x77cf09(0x1da), _0x586f21); _0x367033[_0x77cf09(0x14e)](PromiseRes(_0x5ad56d))['status'](0xc8); } else { if (_0x80c2ec == _0x77cf09(0x1eb) && _0x1e4bf8) { var _0x5ad56d = await Base(_0x77cf09(0x17d), _0x1e4bf8); _0x367033['json'](PromiseRes(_0x5ad56d))['status'](0xc8); } else !(_0x586f21 || _0x1e4bf8) ? _0x367033[_0x77cf09(0x14e)]({ 'developer': develop, 'message': _0x77cf09(0x1c0) }) : _0x367033[_0x77cf09(0x14e)]({ 'developer': develop, 'mess': _0x77cf09(0x138) + _0x80c2ec + _0x77cf09(0x18c) }); } } } } catch (_0x178178) { _0x367033['status'](0x1f4)[_0x77cf09(0x14e)]({ 'developer': develop, 'mess': _0x178178['toString']() + _0x77cf09(0x176) }); } }), router[_0x77d7f1(0x1c4)](_0x77d7f1(0x1a7), async (_0x561b58, _0x42b242, _0x53ca11) => { const _0x413b25 = _0x77d7f1; try { let _0x1a9492 = await InfoGempa(); _0x42b242[_0x413b25(0x14e)](PromiseRes(_0x1a9492))[_0x413b25(0x1ec)](0xc8); } catch (_0x19b843) { _0x42b242['status'](0x1f4)[_0x413b25(0x14e)]({ 'developer': develop, 'mess': _0x19b843[_0x413b25(0x1cb)]() + _0x413b25(0x176) }); } }), router[_0x77d7f1(0x1c4)](_0x77d7f1(0x161), async (_0x24b018, _0x1226ed, _0x3f003d) => { const _0x22490a = _0x77d7f1; try { const _0x533228 = _0x24b018['params'][_0x22490a(0x1b9)], _0x48d214 = [_0x22490a(0x1e0), _0x22490a(0x18b), _0x22490a(0x1d6), _0x22490a(0x1af), 'kumparan-news', _0x22490a(0x17f), _0x22490a(0x1d9), _0x22490a(0x19f), 'suara', 'voa']; if (!_0x48d214[_0x22490a(0x18e)](_0x533228)) return _0x1226ed[_0x22490a(0x14e)]({ 'developer': develop, 'mess': _0x533228 + (_0x22490a(0x1b6) + _0x48d214[_0x22490a(0x1bf)](',\x20')) }); let { data: _0x142e8b } = await axios['get'](_0x22490a(0x163) + _0x533228); _0x1226ed[_0x22490a(0x14e)](PromiseRes(_0x142e8b[_0x22490a(0x186)]))[_0x22490a(0x1ec)](0xc8); } catch (_0x47f050) { _0x1226ed[_0x22490a(0x1ec)](0x1f4)['json']({ 'developer': develop, 'mess': _0x47f050[_0x22490a(0x1cb)]() + _0x22490a(0x176) }); } }), router[_0x77d7f1(0x1c4)](_0x77d7f1(0x178), async (_0x17307f, _0x21cf8e, _0x2ddc55) => { const _0x405181 = _0x77d7f1; try { let _0x32d62d = await InfoGempa_2(); _0x21cf8e['json'](PromiseRes(_0x32d62d))['status'](0xc8); } catch (_0x3ecf84) { _0x21cf8e[_0x405181(0x1ec)](0x1f4)[_0x405181(0x14e)]({ 'developer': develop, 'mess': _0x3ecf84[_0x405181(0x1cb)]() + _0x405181(0x176) }); } }), router['get'](_0x77d7f1(0x1b7), async (_0x5a0917, _0x296289, _0x32d281) => { const _0x4b5ff6 = _0x77d7f1; try { let _0x16f611 = await Covid_World(); _0x296289[_0x4b5ff6(0x14e)](PromiseRes(_0x16f611))['status'](0xc8); } catch (_0x36bcf3) { _0x296289['status'](0x1f4)[_0x4b5ff6(0x14e)]({ 'developer': develop, 'mess': _0x36bcf3[_0x4b5ff6(0x1cb)]() + '.\x20Report\x20this\x20error\x20to\x20Developer(Xorizn)' }); } }), router[_0x77d7f1(0x1c4)](_0x77d7f1(0x17e), async (_0x365f8f, _0x1b37c2, _0xfa29e6) => { const _0x4f921d = _0x77d7f1; try { const _0xe93370 = _0x365f8f[_0x4f921d(0x1ee)][_0x4f921d(0x1d1)]; let _0x325706 = await Covid_Country(_0xe93370); _0x1b37c2[_0x4f921d(0x14e)](PromiseRes(_0x325706))[_0x4f921d(0x1ec)](0xc8); } catch (_0x4a37d8) { _0x1b37c2[_0x4f921d(0x1ec)](0x1f4)['json']({ 'developer': develop, 'mess': _0x4a37d8[_0x4f921d(0x1cb)]() + _0x4f921d(0x176) }); } }), router[_0x77d7f1(0x1c4)](_0x77d7f1(0x189), async (_0x4a3734, _0x1e02de, _0x464bff) => { const _0x3a036c = _0x77d7f1; try { const _0x570aae = _0x4a3734[_0x3a036c(0x1ee)][_0x3a036c(0x1b9)], _0x370fa5 = [_0x3a036c(0x168), _0x3a036c(0x153), _0x3a036c(0x1d4)]; if (_0x370fa5[_0x3a036c(0x18e)](_0x570aae)) return _0x1e02de[_0x3a036c(0x14e)]({ 'developer': develop, 'mess': _0x570aae + _0x3a036c(0x144) }); if (_0x570aae === 'global') var _0x10dbb1 = await Kompas_Global(); else { if (_0x570aae === _0x3a036c(0x153)) var _0x10dbb1 = await Kompas_News(); else { if (_0x570aae === _0x3a036c(0x1d4)) var _0x10dbb1 = await Kompas_Terpopuler(); } } _0x1e02de['json'](PromiseRes(_0x10dbb1))[_0x3a036c(0x1ec)](0xc8); } catch (_0xd82a5e) { _0x1e02de[_0x3a036c(0x1ec)](0x1f4)[_0x3a036c(0x14e)]({ 'developer': develop, 'mess': _0xd82a5e['toString']() + '.\x20Report\x20this\x20error\x20to\x20Developer(Xorizn)' }); } }), router[_0x77d7f1(0x1c4)](_0x77d7f1(0x190), async (_0x1a246e, _0x495696, _0x24b785) => { const _0x5739c5 = _0x77d7f1; try { const _0x10f8b3 = _0x1a246e[_0x5739c5(0x1ee)][_0x5739c5(0x1b9)], _0x51a6d1 = ['news', _0x5739c5(0x131), 'investment', _0x5739c5(0x1ac), _0x5739c5(0x15c), 'tech', _0x5739c5(0x1e6)]; if (!_0x51a6d1[_0x5739c5(0x18e)](_0x10f8b3)) return _0x495696[_0x5739c5(0x14e)]({ 'developer': develop, 'mess': _0x5739c5(0x148) + _0x10f8b3 + _0x5739c5(0x192) + _0x51a6d1[_0x5739c5(0x1bf)](',\x20') }); let _0x117714 = await CnBc(_0x10f8b3); _0x495696[_0x5739c5(0x14e)](PromiseRes(_0x117714))[_0x5739c5(0x1ec)](0xc8); } catch (_0x214bc4) { _0x495696[_0x5739c5(0x1ec)](0x1f4)[_0x5739c5(0x14e)]({ 'developer': develop, 'mess': _0x214bc4['toString']() + '.\x20Report\x20this\x20error\x20to\x20Developer(Xorizn)' }); } }), router[_0x77d7f1(0x1c4)](_0x77d7f1(0x1d0), async (_0x464b18, _0x330c0c, _0x10a74e) => { const _0x25e42d = _0x77d7f1; try { let _0x4b4c1e = await RumahKeadilan(); _0x330c0c[_0x25e42d(0x14e)](PromiseRes(_0x4b4c1e))[_0x25e42d(0x1ec)](0xc8); } catch (_0x34f447) { _0x330c0c['status'](0x1f4)[_0x25e42d(0x14e)]({ 'developer': develop, 'mess': _0x34f447[_0x25e42d(0x1cb)]() + _0x25e42d(0x176) }); } }), router['get']('/news/tixid', async (_0x305b31, _0x227ae6, _0x541a2a) => { const _0x2b4f44 = _0x77d7f1; try { let _0x3ef30d = await TixID(); _0x227ae6[_0x2b4f44(0x14e)](PromiseRes(_0x3ef30d))[_0x2b4f44(0x1ec)](0xc8); } catch (_0x51fe87) { _0x227ae6['status'](0x1f4)[_0x2b4f44(0x14e)]({ 'developer': develop, 'mess': _0x51fe87['toString']() + _0x2b4f44(0x176) }); } }), router[_0x77d7f1(0x1c4)]('/stalk/instagram/:type', async (_0x417d3e, _0x40011a, _0x4623c6) => { const _0x2c7663 = _0x77d7f1; try { const _0x3c2963 = _0x417d3e[_0x2c7663(0x1e1)][_0x2c7663(0x1be)], _0x2a8da3 = _0x417d3e[_0x2c7663(0x1ee)][_0x2c7663(0x1b9)], _0x631072 = ['profile', 'story', _0x2c7663(0x1c9), _0x2c7663(0x1a5), _0x2c7663(0x19c)]; if (!_0x631072[_0x2c7663(0x18e)](_0x2a8da3)) return _0x40011a[_0x2c7663(0x14e)]({ 'developer': develop, 'mess': _0x2a8da3 + _0x2c7663(0x172) }); if (!_0x3c2963) return _0x40011a['json'](mess[_0x2c7663(0x19e)]); const _0x198572 = { 'headers': { 'accept': _0x2c7663(0x1cd), 'cookie': _0x2c7663(0x160), 'user-agent': _0x2c7663(0x13a) } }; if (_0x2a8da3 === 'profile') var { data: _0x99599e } = await axios[_0x2c7663(0x1c4)](_0x2c7663(0x1e7) + _0x3c2963, _0x198572); else { if (_0x2a8da3 === _0x2c7663(0x154)) var _0x99599e = await StoryIG(_0x3c2963); else { if (_0x2a8da3 === _0x2c7663(0x1c9)) var { data: _0x99599e } = await axios[_0x2c7663(0x1c4)](_0x2c7663(0x1a2) + _0x3c2963, _0x198572); else { if (_0x2a8da3 === _0x2c7663(0x1a5)) var { data: _0x99599e } = await axios[_0x2c7663(0x1c4)](_0x2c7663(0x16c) + _0x3c2963, _0x198572); else { if (_0x2a8da3 === _0x2c7663(0x19c)) var { data: _0x99599e } = await axios['get'](_0x2c7663(0x151) + _0x3c2963, _0x198572); } } } } _0x40011a[_0x2c7663(0x14e)](PromiseRes(_0x99599e))['status'](0xc8); } catch (_0x4a75c2) { _0x40011a[_0x2c7663(0x1ec)](0x1f4)[_0x2c7663(0x14e)]({ 'developer': develop, 'mess': _0x4a75c2['toString']() + _0x2c7663(0x176) }); } }), router[_0x77d7f1(0x1c4)](_0x77d7f1(0x12a), async (_0x4890a1, _0x56106d, _0x3814e1) => { const _0xef4cc2 = _0x77d7f1; try { const _0x1fd672 = _0x4890a1[_0xef4cc2(0x1e1)][_0xef4cc2(0x1be)], _0x48503d = _0x4890a1[_0xef4cc2(0x1ee)]['type'], _0x26c0b6 = [_0xef4cc2(0x18d), _0xef4cc2(0x19d)]; if (!_0x26c0b6[_0xef4cc2(0x18e)](_0x48503d)) return _0x56106d['json']({ 'developer': develop, 'mess': _0x48503d + '\x20github\x20not\x20found' }); if (!_0x1fd672) return _0x56106d[_0xef4cc2(0x14e)](mess['null_username']); if (_0x48503d === _0xef4cc2(0x18d)) var _0x1e260d = await GithubStalk(_0x1fd672); else { if (_0x48503d === _0xef4cc2(0x19d)) var _0x1e260d = await GithubRepo(_0x1fd672); } _0x56106d[_0xef4cc2(0x14e)](PromiseRes(_0x1e260d))[_0xef4cc2(0x1ec)](0xc8); } catch (_0x3915f4) { _0x56106d[_0xef4cc2(0x1ec)](0x1f4)[_0xef4cc2(0x14e)]({ 'developer': develop, 'mess': _0x3915f4['toString']() + _0xef4cc2(0x176) }); } }), router['get']('/stalk/npm', async (_0x423c1f, _0x57d28e, _0x54d3b2) => { const _0x389013 = _0x77d7f1; try { const _0x562209 = _0x423c1f[_0x389013(0x1ee)][_0x389013(0x1ca)]; if (!_0x562209) return _0x57d28e[_0x389013(0x14e)]({ 'developer': develop, 'mess': _0x389013(0x18a) }); let { data: _0x9d75ea } = await axios[_0x389013(0x1c4)](_0x389013(0x1a1) + _0x562209); _0x57d28e['json'](PromiseRes(_0x9d75ea))[_0x389013(0x1ec)](0xc8); } catch (_0x5a4342) { _0x57d28e[_0x389013(0x1ec)](0x1f4)['json']({ 'developer': develop, 'mess': _0x5a4342['toString']() + _0x389013(0x176) }); } }), router[_0x77d7f1(0x1c4)](_0x77d7f1(0x187), async (_0x47aa7b, _0x468599, _0x4e8367) => { const _0x589fc3 = _0x77d7f1; try { const _0x3c2b43 = _0x47aa7b['query'][_0x589fc3(0x139)], _0x270bb3 = _0x47aa7b['params'][_0x589fc3(0x1b9)], _0xbbc025 = [_0x589fc3(0x1b0), 'manga', _0x589fc3(0x143), _0x589fc3(0x13c)]; if (!_0xbbc025[_0x589fc3(0x18e)](_0x270bb3)) return _0x468599[_0x589fc3(0x14e)]({ 'developer': develop, 'mess': _0x270bb3 + '\x20myanimelist\x20not\x20found' }); if (_0x270bb3 === _0x589fc3(0x1b0)) { if (!_0x3c2b43) return _0x468599['json'](mess[_0x589fc3(0x197)]); var _0x57a0c6 = await MalSearchCharacter(_0x3c2b43); } else { if (_0x270bb3 === _0x589fc3(0x166)) { if (!_0x3c2b43) return _0x468599['json'](mess[_0x589fc3(0x197)]); var _0x57a0c6 = await MalSearchManga(_0x3c2b43); } else { if (_0x270bb3 === _0x589fc3(0x143)) { if (!_0x3c2b43) return _0x468599[_0x589fc3(0x14e)](mess[_0x589fc3(0x197)]); var _0x57a0c6 = await MalSearchAnime(_0x3c2b43); } else { if (_0x270bb3 === _0x589fc3(0x13c)) var _0x57a0c6 = await MalUpcoming(); } } } _0x468599['json'](PromiseRes(_0x57a0c6))[_0x589fc3(0x1ec)](0xc8); } catch (_0x3268b2) { _0x468599[_0x589fc3(0x1ec)](0x1f4)[_0x589fc3(0x14e)]({ 'developer': develop, 'mess': _0x3268b2[_0x589fc3(0x1cb)]() + _0x589fc3(0x176) }); } }), router[_0x77d7f1(0x1c4)](_0x77d7f1(0x1e8), async (_0xe9dc1f, _0x5ca026, _0xd6eb7a) => { const _0x5c0354 = _0x77d7f1; try { const _0x5302b7 = _0xe9dc1f[_0x5c0354(0x1ee)][_0x5c0354(0x1b9)], _0xb5f920 = [_0x5c0354(0x132), _0x5c0354(0x136), 'tv', _0x5c0354(0x1a4), _0x5c0354(0x15e), 'ona', _0x5c0354(0x19b), _0x5c0354(0x1dd), 'favorite']; if (!_0xb5f920['includes'](_0x5302b7)) return _0x5ca026[_0x5c0354(0x14e)]({ 'developer': develop, 'mess': _0x5302b7 + '\x20myanimelist\x20not\x20found' }); let _0x2e9871 = await MalUpcoming(_0x5302b7); _0x5ca026[_0x5c0354(0x14e)](PromiseRes(_0x2e9871))['status'](0xc8); } catch (_0x1eef99) { _0x5ca026[_0x5c0354(0x1ec)](0x1f4)[_0x5c0354(0x14e)]({ 'developer': develop, 'mess': _0x1eef99['toString']() + '.\x20Report\x20this\x20error\x20to\x20Developer(Xorizn)' }); } }), router[_0x77d7f1(0x1c4)]('/random/quotes-anime', async (_0x440d84, _0x375825, _0x7f2afa) => { const _0x153924 = _0x77d7f1; try { let _0x558195 = await QuotesAnime(); _0x375825['json'](PromiseRes(_0x558195))[_0x153924(0x1ec)](0xc8); } catch (_0x246810) { _0x375825['status'](0x1f4)[_0x153924(0x14e)]({ 'developer': develop, 'mess': _0x246810[_0x153924(0x1cb)]() + _0x153924(0x176) }); } }), router['get'](_0x77d7f1(0x185), async (_0x577f24, _0x4e8e95, _0x25b17b) => { const _0x45f62d = _0x77d7f1; try { let _0x484f16 = await WaifuGenerator(); _0x4e8e95[_0x45f62d(0x14e)](PromiseRes(_0x484f16))[_0x45f62d(0x1ec)](0xc8); } catch (_0x4e3075) { _0x4e8e95[_0x45f62d(0x1ec)](0x1f4)[_0x45f62d(0x14e)]({ 'developer': develop, 'mess': _0x4e3075[_0x45f62d(0x1cb)]() + _0x45f62d(0x176) }); } }), router['get'](_0x77d7f1(0x174), async (_0x359373, _0x323ca6, _0x1bd40a) => { const _0x28f6c9 = _0x77d7f1; try { let _0x596b37 = await NekopoiDcVideo(); _0x323ca6[_0x28f6c9(0x14e)](PromiseRes(_0x596b37))[_0x28f6c9(0x1ec)](0xc8); } catch (_0x2c8a60) { _0x323ca6[_0x28f6c9(0x1ec)](0x1f4)['json']({ 'developer': develop, 'mess': _0x2c8a60[_0x28f6c9(0x1cb)]() + _0x28f6c9(0x176) }); } }), router[_0x77d7f1(0x1c4)](_0x77d7f1(0x1c1), async (_0x2f4c8f, _0x283043, _0x5def00) => { const _0x49d8a2 = _0x77d7f1; try { let _0x5742df = await DarkJokes(), _0x40fbc6 = await GetBuff(_0x5742df); _0x283043['type'](_0x49d8a2(0x1de))[_0x49d8a2(0x1e2)](_0x40fbc6); } catch (_0x20360f) { _0x283043['status'](0x1f4)[_0x49d8a2(0x14e)]({ 'developer': develop, 'mess': _0x20360f[_0x49d8a2(0x1cb)]() + _0x49d8a2(0x176) }); } }), router[_0x77d7f1(0x1c4)]('/random/waifu', async (_0x553baf, _0x3dc0fa, _0x19e1c5) => { const _0x312de6 = _0x77d7f1; try { const _0x4d4659 = _0x553baf[_0x312de6(0x1e1)][_0x312de6(0x1b9)], _0x57003d = [_0x312de6(0x129), _0x312de6(0x1bd)], _0x29cf2e = _0x4d4659 ? _0x4d4659 : _0x312de6(0x1bd); if (!_0x57003d[_0x312de6(0x18e)](_0x29cf2e)) return _0x3dc0fa['json']({ 'developer': develop, 'mess': 'type\x20' + _0x4d4659 + '\x20not\x20found,\x20available\x20types:\x20' + _0x57003d[_0x312de6(0x1bf)](',\x20') }); let _0x47405c = await Waifu(_0x29cf2e); _0x3dc0fa[_0x312de6(0x14e)](PromiseRes(_0x47405c))[_0x312de6(0x1ec)](0xc8); } catch (_0x409c76) { _0x3dc0fa[_0x312de6(0x1ec)](0x1f4)['json']({ 'developer': develop, 'mess': _0x409c76[_0x312de6(0x1cb)]() + '.\x20Report\x20this\x20error\x20to\x20Developer(Xorizn)' }); } }), router[_0x77d7f1(0x1c4)](_0x77d7f1(0x133), async (_0x9057c0, _0x422c0d, _0x1acd73) => { const _0x2de7de = _0x77d7f1; try { const _0x5b7efb = _0x9057c0[_0x2de7de(0x1e1)][_0x2de7de(0x1b9)], _0x114650 = [_0x2de7de(0x169), _0x2de7de(0x1b5), 'shinobu', _0x2de7de(0x162), _0x2de7de(0x1b8), _0x2de7de(0x142), _0x2de7de(0x12e), 'hug', _0x2de7de(0x1c7), _0x2de7de(0x1b3), _0x2de7de(0x171), 'pat', 'smug', 'bonk', _0x2de7de(0x196), 'blush', _0x2de7de(0x141), _0x2de7de(0x14c), _0x2de7de(0x155), _0x2de7de(0x165), 'nom', _0x2de7de(0x158), 'glomp', _0x2de7de(0x1e4), _0x2de7de(0x16a), _0x2de7de(0x1ae), 'happy', _0x2de7de(0x177), _0x2de7de(0x1ea), 'dance', 'cringe'], _0x5a82b5 = _0x5b7efb ? _0x5b7efb : _0x2de7de(0x169); if (!_0x114650[_0x2de7de(0x18e)](_0x5a82b5)) return _0x422c0d[_0x2de7de(0x14e)]({ 'developer': develop, 'mess': _0x2de7de(0x138) + _0x5b7efb + '\x20not\x20found,\x20available\x20types:\x20' + _0x114650[_0x2de7de(0x1bf)](',\x20') }); let _0x284b7a = await Sfw(_0x5a82b5), _0x13d2eb = await GetBuff(_0x284b7a[_0x2de7de(0x17b)]); _0x422c0d['type']('png')[_0x2de7de(0x1e2)](_0x13d2eb); } catch (_0x674012) { _0x422c0d[_0x2de7de(0x1ec)](0x1f4)[_0x2de7de(0x14e)]({ 'developer': develop, 'mess': _0x674012[_0x2de7de(0x1cb)]() + '.\x20Report\x20this\x20error\x20to\x20Developer(Xorizn)' }); } }), router['get']('/random/nsfw', async (_0x459344, _0x42fdd4, _0xab5c18) => { const _0x436a42 = _0x77d7f1; try { const _0xebd947 = _0x459344['query']['type'], _0x33b1c9 = [_0x436a42(0x169), _0x436a42(0x1b5), _0x436a42(0x12d), _0x436a42(0x127)], _0x9d8308 = _0xebd947 ? _0xebd947 : _0x436a42(0x169); if (!_0x33b1c9['includes'](_0x9d8308)) return _0x42fdd4[_0x436a42(0x14e)]({ 'developer': develop, 'mess': _0x436a42(0x138) + _0xebd947 + _0x436a42(0x1db) + _0x33b1c9[_0x436a42(0x1bf)](',\x20') }); let _0x375561 = await Nsfw(_0x9d8308), _0xbb406a = await GetBuff(_0x375561[_0x436a42(0x17b)]); _0x42fdd4[_0x436a42(0x1b9)](_0x436a42(0x1de))[_0x436a42(0x1e2)](_0xbb406a); } catch (_0x392c88) { _0x42fdd4[_0x436a42(0x1ec)](0x1f4)['json']({ 'developer': develop, 'mess': _0x392c88['toString']() + _0x436a42(0x176) }); } }), router['get']('/image/pinterest/v2', async (_0xd134e, _0x37f832, _0x233270) => { const _0x32b62a = _0x77d7f1; try { const _0x3f7a8f = _0xd134e[_0x32b62a(0x1e1)]['search']; if (!_0x3f7a8f) return _0x37f832[_0x32b62a(0x14e)](mess[_0x32b62a(0x197)]); let _0x5af485 = await Pinterest(_0x3f7a8f), _0x2fe571 = _0x5af485[Math[_0x32b62a(0x1ba)](_0x5af485['length'] * Math[_0x32b62a(0x156)]())], _0x178366 = await GetBuff(_0x2fe571); _0x37f832[_0x32b62a(0x1b9)](_0x32b62a(0x1de))['send'](_0x178366); } catch (_0x53fa08) { _0x37f832[_0x32b62a(0x1ec)](0x1f4)[_0x32b62a(0x14e)]({ 'developer': develop, 'mess': _0x53fa08[_0x32b62a(0x1cb)]() + _0x32b62a(0x176) }); } }), router[_0x77d7f1(0x1c4)](_0x77d7f1(0x1e3), async (_0x1ccc9d, _0x59510b, _0x1fe798) => { const _0x3dd56a = _0x77d7f1; try { const _0x33c1f7 = _0x1ccc9d[_0x3dd56a(0x1e1)][_0x3dd56a(0x139)]; if (!_0x33c1f7) return _0x59510b[_0x3dd56a(0x14e)](mess[_0x3dd56a(0x197)]); let _0x4f0d23 = await Pinterest(_0x33c1f7); _0x59510b[_0x3dd56a(0x14e)](PromiseRes(_0x4f0d23))[_0x3dd56a(0x1ec)](0xc8); } catch (_0xad46b2) { _0x59510b['status'](0x1f4)['json']({ 'developer': develop, 'mess': _0xad46b2['toString']() + _0x3dd56a(0x176) }); } }), router['get'](_0x77d7f1(0x1bc), async (_0x814cf3, _0x1d3e4b, _0x311379) => { const _0x303a38 = _0x77d7f1; try { const _0x36d1e3 = _0x814cf3['query'][_0x303a38(0x139)]; if (!_0x36d1e3) return _0x1d3e4b[_0x303a38(0x14e)](mess[_0x303a38(0x197)]); let _0x162c5d = await WallpaperFlare(_0x36d1e3); _0x1d3e4b['json'](PromiseRes(_0x162c5d))[_0x303a38(0x1ec)](0xc8); } catch (_0x35c83b) { _0x1d3e4b[_0x303a38(0x1ec)](0x1f4)[_0x303a38(0x14e)]({ 'developer': develop, 'mess': _0x35c83b[_0x303a38(0x1cb)]() + _0x303a38(0x176) }); } }), router[_0x77d7f1(0x1c4)](_0x77d7f1(0x17a), async (_0x2c9ebd, _0x244d7f, _0x281fc0) => { const _0x53f3a6 = _0x77d7f1; try { const _0x1b86d9 = _0x2c9ebd['query'][_0x53f3a6(0x139)]; if (!_0x1b86d9) return _0x244d7f[_0x53f3a6(0x14e)](mess[_0x53f3a6(0x197)]); let _0x17a38b = await Wallpaper(_0x1b86d9); _0x244d7f[_0x53f3a6(0x14e)](PromiseRes(_0x17a38b))['status'](0xc8); } catch (_0x2a0967) { _0x244d7f['status'](0x1f4)[_0x53f3a6(0x14e)]({ 'developer': develop, 'mess': _0x2a0967[_0x53f3a6(0x1cb)]() + '.\x20Report\x20this\x20error\x20to\x20Developer(Xorizn)' }); } }), router[_0x77d7f1(0x1c4)](_0x77d7f1(0x170), async (_0xcad65c, _0x16851b, _0x4ec0f1) => { const _0x1ba689 = _0x77d7f1; try { const _0x400650 = _0xcad65c[_0x1ba689(0x1ee)][_0x1ba689(0x1b9)], _0x3db00a = _0xcad65c[_0x1ba689(0x1e1)][_0x1ba689(0x164)], _0x3d4e31 = _0x1ba689(0x1e5); if (!_0x3db00a) return _0x16851b[_0x1ba689(0x14e)](mess['null_text']); let _0x5e3df3; if (/holo/[_0x1ba689(0x15b)](_0x400650)) _0x5e3df3 = _0x3d4e31 + _0x1ba689(0x1c5); if (/fluid/[_0x1ba689(0x15b)](_0x400650)) _0x5e3df3 = _0x3d4e31 + _0x1ba689(0x157); if (/deep-sea/['test'](_0x400650)) _0x5e3df3 = _0x3d4e31 + _0x1ba689(0x14a); if (/thunder2/['test'](_0x400650)) _0x5e3df3 = _0x3d4e31 + _0x1ba689(0x1e9); if (/thunder/[_0x1ba689(0x15b)](_0x400650)) _0x5e3df3 = _0x3d4e31 + 'create-thunder-text-effect-online-881.html'; if (/matrix/[_0x1ba689(0x15b)](_0x400650)) _0x5e3df3 = _0x3d4e31 + _0x1ba689(0x1d7); if (/technology/['test'](_0x400650)) _0x5e3df3 = _0x3d4e31 + _0x1ba689(0x152); if (/devilwings/['test'](_0x400650)) _0x5e3df3 = _0x3d4e31 + _0x1ba689(0x183); if (/blackpink2/[_0x1ba689(0x15b)](_0x400650)) _0x5e3df3 = _0x3d4e31 + _0x1ba689(0x193); if (/glitch/[_0x1ba689(0x15b)](_0x400650)) _0x5e3df3 = _0x3d4e31 + _0x1ba689(0x134); if (/whitegold/[_0x1ba689(0x15b)](_0x400650)) _0x5e3df3 = _0x3d4e31 + _0x1ba689(0x14d); if (/ice/[_0x1ba689(0x15b)](_0x400650)) _0x5e3df3 = _0x3d4e31 + _0x1ba689(0x13e); if (/frozen/[_0x1ba689(0x15b)](_0x400650)) _0x5e3df3 = _0x3d4e31 + _0x1ba689(0x1b2); if (/candy/[_0x1ba689(0x15b)](_0x400650)) _0x5e3df3 = _0x3d4e31 + _0x1ba689(0x16e); if (/bokeh/[_0x1ba689(0x15b)](_0x400650)) _0x5e3df3 = _0x3d4e31 + 'bokeh-text-effect-876.html'; if (/holographic/[_0x1ba689(0x15b)](_0x400650)) _0x5e3df3 = _0x3d4e31 + 'holographic-3d-text-effect-975.html'; if (/orange/[_0x1ba689(0x15b)](_0x400650)) _0x5e3df3 = _0x3d4e31 + _0x1ba689(0x1bb); if (/berry/[_0x1ba689(0x15b)](_0x400650)) _0x5e3df3 = _0x3d4e31 + _0x1ba689(0x149); if (/comic/[_0x1ba689(0x15b)](_0x400650)) _0x5e3df3 = _0x3d4e31 + 'create-3d-comic-text-effects-online-1091.html'; if (/luxury/[_0x1ba689(0x15b)](_0x400650)) _0x5e3df3 = _0x3d4e31 + _0x1ba689(0x15f); if (/blackpink/['test'](_0x400650)) _0x5e3df3 = _0x3d4e31 + _0x1ba689(0x1d5); if (/cloud/[_0x1ba689(0x15b)](_0x400650)) _0x5e3df3 = _0x3d4e31 + 'create-a-cloud-text-effect-in-the-sky-online-997.html'; if (/newyear/[_0x1ba689(0x15b)](_0x400650)) _0x5e3df3 = _0x3d4e31 + _0x1ba689(0x12b); if (/multicolor/[_0x1ba689(0x15b)](_0x400650)) _0x5e3df3 = _0x3d4e31 + _0x1ba689(0x137); if (/halloween/[_0x1ba689(0x15b)](_0x400650)) _0x5e3df3 = _0x3d4e31 + _0x1ba689(0x1d8); if (/batman/['test'](_0x400650)) _0x5e3df3 = _0x3d4e31 + _0x1ba689(0x1ad); if (/transformer/[_0x1ba689(0x15b)](_0x400650)) _0x5e3df3 = _0x3d4e31 + _0x1ba689(0x16f); if (/blackpink3/[_0x1ba689(0x15b)](_0x400650)) _0x5e3df3 = _0x3d4e31 + 'create-a-blackpink-logo-decorated-with-roses-online-free-1080.html'; if (/crystal/[_0x1ba689(0x15b)](_0x400650)) _0x5e3df3 = _0x3d4e31 + _0x1ba689(0x13f); if (/graffiti/['test'](_0x400650)) _0x5e3df3 = _0x3d4e31 + _0x1ba689(0x15a); if (/pencil/[_0x1ba689(0x15b)](_0x400650)) _0x5e3df3 = _0x3d4e31 + _0x1ba689(0x147); if (/paper-cut/[_0x1ba689(0x15b)](_0x400650)) _0x5e3df3 = _0x3d4e31 + 'create-art-paper-cut-text-effect-online-1022.html'; let _0x11a889 = await textpro(_0x5e3df3, [_0x3db00a]), _0x50df0f = await GetBuff(_0x11a889[_0x1ba689(0x16d)]); _0x16851b[_0x1ba689(0x1b9)]('png')['send'](_0x50df0f); } catch (_0x303be0) { _0x16851b[_0x1ba689(0x1ec)](0x1f4)['json']({ 'developer': develop, 'mess': _0x303be0['toString']() + _0x1ba689(0x176) }); } }), router[_0x77d7f1(0x1c4)]('/jadwal-sholat/2/:type', async (_0x2b214a, _0x2bc34b, _0x390df0) => { const _0x28e5ad = _0x77d7f1; try { const _0x18049e = _0x2b214a[_0x28e5ad(0x1ee)]['type'], _0x1bcee2 = _0x2b214a[_0x28e5ad(0x1e1)]['text'], _0x1aa5a4 = _0x2b214a['query'][_0x28e5ad(0x1c8)], _0x296241 = _0x28e5ad(0x1e5); if (!_0x1bcee2) return _0x2bc34b['json'](mess[_0x28e5ad(0x1a0)]); if (!_0x1aa5a4) return _0x2bc34b[_0x28e5ad(0x14e)](mess['null_text2']); let _0xae4cfb; if (/glitch/['test'](_0x18049e)) _0xae4cfb = _0x296241 + _0x28e5ad(0x1d2); if (/glitch2/[_0x28e5ad(0x15b)](_0x18049e)) _0xae4cfb = _0x296241 + _0x28e5ad(0x1a9); if (/vintage/[_0x28e5ad(0x15b)](_0x18049e)) _0xae4cfb = _0x296241 + _0x28e5ad(0x184); if (/blackpink/[_0x28e5ad(0x15b)](_0x18049e)) _0xae4cfb = _0x296241 + _0x28e5ad(0x1cc); if (/thor/[_0x28e5ad(0x15b)](_0x18049e)) _0xae4cfb = _0x296241 + _0x28e5ad(0x167); if (/graffiti/[_0x28e5ad(0x15b)](_0x18049e)) _0xae4cfb = _0x296241 + _0x28e5ad(0x191); if (/graffiti2/[_0x28e5ad(0x15b)](_0x18049e)) _0xae4cfb = _0x296241 + _0x28e5ad(0x1ab); if (/pornhub/[_0x28e5ad(0x15b)](_0x18049e)) _0xae4cfb = _0x296241 + _0x28e5ad(0x1c3); if (/natural/['test'](_0x18049e)) _0xae4cfb = _0x296241 + _0x28e5ad(0x1a8); if (/marvel/['test'](_0x18049e)) _0xae4cfb = _0x296241 + _0x28e5ad(0x1c2); if (/marvel2/[_0x28e5ad(0x15b)](_0x18049e)) _0xae4cfb = _0x296241 + _0x28e5ad(0x194); if (/avengers/['test'](_0x18049e)) _0xae4cfb = _0x296241 + _0x28e5ad(0x130); if (/space/[_0x28e5ad(0x15b)](_0x18049e)) _0xae4cfb = _0x296241 + _0x28e5ad(0x13b); if (/spooky/[_0x28e5ad(0x15b)](_0x18049e)) _0xae4cfb = _0x296241 + _0x28e5ad(0x181); if (/layered/[_0x28e5ad(0x15b)](_0x18049e)) _0xae4cfb = _0x296241 + _0x28e5ad(0x1ce); let _0x4fbab2 = await textpro(_0xae4cfb, [_0x1bcee2, _0x1aa5a4]), _0x5b1859 = await GetBuff(_0x4fbab2['image']); _0x2bc34b['type'](_0x28e5ad(0x1de))[_0x28e5ad(0x1e2)](_0x5b1859); } catch (_0x49b97d) { _0x2bc34b[_0x28e5ad(0x1ec)](0x1f4)[_0x28e5ad(0x14e)]({ 'developer': develop, 'mess': _0x49b97d[_0x28e5ad(0x1cb)]() + _0x28e5ad(0x176) }); } }), router['get'](_0x77d7f1(0x1b1), async (_0x13766f, _0x51d17d, _0x448312) => { const _0x5dd127 = _0x77d7f1; try { let { data: _0x18aec0 } = await axios[_0x5dd127(0x1c4)]('https://raw.githubusercontent.com/Xorizn/database-api/main/fun/tebak-gambar.json'), _0x57243d = _0x18aec0[Math[_0x5dd127(0x1ba)](_0x18aec0[_0x5dd127(0x145)] * Math[_0x5dd127(0x156)]())]; _0x51d17d[_0x5dd127(0x14e)](PromiseRes(_0x57243d))[_0x5dd127(0x1ec)](0xc8); } catch (_0x144c58) { _0x51d17d[_0x5dd127(0x1ec)](0x1f4)[_0x5dd127(0x14e)]({ 'developer': develop, 'mess': _0x144c58[_0x5dd127(0x1cb)]() + _0x5dd127(0x176) }); } }), router[_0x77d7f1(0x1c4)](_0x77d7f1(0x17c), async (_0x2bdff5, _0x3a263f, _0x45fbe6) => { const _0x453042 = _0x77d7f1; try { let { data: _0x45a77c } = await axios[_0x453042(0x1c4)]('https://raw.githubusercontent.com/Xorizn/database-api/main/fun/caklontong.json'), _0x470593 = _0x45a77c[Math['floor'](_0x45a77c[_0x453042(0x145)] * Math[_0x453042(0x156)]())]; _0x3a263f[_0x453042(0x14e)](PromiseRes(_0x470593))[_0x453042(0x1ec)](0xc8); } catch (_0x4d8b64) { _0x3a263f['status'](0x1f4)[_0x453042(0x14e)]({ 'developer': develop, 'mess': _0x4d8b64[_0x453042(0x1cb)]() + _0x453042(0x176) }); } }), router[_0x77d7f1(0x1c4)]('/game/list-hero-ml', async (_0x501a0d, _0xa10600, _0x2b05e6) => { const _0xd31973 = _0x77d7f1; try { let _0x36bdbf = await ListHero(); _0xa10600[_0xd31973(0x14e)](PromiseRes(_0x36bdbf))[_0xd31973(0x1ec)](0xc8); } catch (_0x44b77b) { _0xa10600['status'](0x1f4)['json']({ 'developer': develop, 'mess': _0x44b77b[_0xd31973(0x1cb)]() + _0xd31973(0x176) }); } }), router[_0x77d7f1(0x1c4)](_0x77d7f1(0x1b4), async (_0x5baf79, _0xc91437, _0x893743) => { const _0x380a0a = _0x77d7f1; try { const _0x452f9c = _0x5baf79['query'][_0x380a0a(0x139)]; if (!_0x452f9c) return _0xc91437[_0x380a0a(0x14e)](mess[_0x380a0a(0x197)]); let _0x512f0c = await Hero(_0x452f9c); if (_0x512f0c['mess']) return _0xc91437[_0x380a0a(0x1ec)](0x194)[_0x380a0a(0x14e)]({ 'developer': develop, 'mess': _0x380a0a(0x19a) }); _0xc91437['json'](PromiseRes(_0x512f0c))[_0x380a0a(0x1ec)](0xc8); } catch (_0x2fcf9b) { _0xc91437[_0x380a0a(0x1ec)](0x1f4)[_0x380a0a(0x14e)]({ 'developer': develop, 'mess': _0x2fcf9b['toString']() + _0x380a0a(0x176) }); } }), router[_0x77d7f1(0x1c4)](_0x77d7f1(0x1d3), async (_0x8ed25d, _0x28c2ca, _0x5e9ba9) => { const _0x183e5a = _0x77d7f1; try { const _0x21d579 = _0x8ed25d[_0x183e5a(0x1e1)][_0x183e5a(0x164)], _0x58eb3e = _0x8ed25d[_0x183e5a(0x1e1)][_0x183e5a(0x128)], _0x872eef = _0x8ed25d[_0x183e5a(0x1e1)][_0x183e5a(0x14b)]; if (!_0x21d579) return _0x28c2ca[_0x183e5a(0x14e)](mess['null_text']); let { data: _0x188391 } = await axios[_0x183e5a(0x1c9)](_0x183e5a(0x135), { 'text': _0x21d579, 'lc': _0x58eb3e ? _0x58eb3e : 'id', 'key': _0x872eef ? _0x872eef : '' }, { 'headers': { 'Content-Type': _0x183e5a(0x182) } }), _0x32f468 = { 'language': _0x188391[_0x183e5a(0x18f)], 'text': _0x188391[_0x183e5a(0x164)], 'message': _0x188391[_0x183e5a(0x1df)], 'time': _0x188391['time'] }; _0x28c2ca['json'](PromiseRes(_0x32f468))[_0x183e5a(0x1ec)](0xc8); } catch (_0x40d549) { _0x28c2ca['status'](0x1f4)['json']({ 'developer': develop, 'mess': _0x40d549[_0x183e5a(0x1cb)]() + _0x183e5a(0x176) }); } }), router[_0x77d7f1(0x1c4)](_0x77d7f1(0x1ed), async (_0x4ddee8, _0x2d84af, _0xeda3a0) => { const _0x3e0da5 = _0x77d7f1; try { const _0x25947a = _0x4ddee8[_0x3e0da5(0x1e1)]['nomer']; if (!_0x25947a) return _0x2d84af['json'](mess['null_nomer']); let _0x1ee2c3 = Number(_0x25947a); if (isNaN(_0x1ee2c3)) return _0x2d84af[_0x3e0da5(0x14e)]({ 'developer': develop, 'mess': _0x3e0da5(0x1dc) }); let _0x2af913 = await Surah(_0x1ee2c3); _0x2d84af[_0x3e0da5(0x14e)](PromiseRes(_0x2af913))[_0x3e0da5(0x1ec)](0xc8); } catch (_0x2be76a) { _0x2d84af[_0x3e0da5(0x1ec)](0x1f4)[_0x3e0da5(0x14e)]({ 'developer': develop, 'mess': _0x2be76a['toString']() + _0x3e0da5(0x176) }); } }), router[_0x77d7f1(0x1c4)](_0x77d7f1(0x15d), async (_0x1267e9, _0xe29630, _0x2d67b1) => { const _0x1d4192 = _0x77d7f1; try { var _0x13cc4e = _0x1267e9[_0x1d4192(0x1e1)][_0x1d4192(0x180)], _0x13cc4e = _0x13cc4e ? _0x13cc4e : '1', _0x13cc4e = Number(_0x13cc4e); if (isNaN(_0x13cc4e)) return _0xe29630[_0x1d4192(0x14e)]({ 'developer': develop, 'mess': _0x1d4192(0x1dc) }); let _0x3292e6 = await JadwalSholat(_0x13cc4e); _0xe29630[_0x1d4192(0x14e)](PromiseRes(_0x3292e6))['status'](0xc8); } catch (_0x481664) { _0xe29630['status'](0x1f4)[_0x1d4192(0x14e)]({ 'developer': develop, 'mess': _0x481664['toString']() + '.\x20Report\x20this\x20error\x20to\x20Developer(Xorizn)' }); } }), router[_0x77d7f1(0x1c4)](_0x77d7f1(0x199), async (_0x2a0db4, _0x3c7f8a, _0x421b1f) => { const _0x12f9cc = _0x77d7f1, _0x19c943 = _0x2a0db4['query'][_0x12f9cc(0x17b)]; if (!_0x19c943) return _0x3c7f8a[_0x12f9cc(0x14e)](mess[_0x12f9cc(0x146)]); request(_0x12f9cc(0x14f) + _0x19c943, function (_0x218fe9, _0x81e8e8, _0x5aeea4) { const _0x5f3eb5 = _0x12f9cc; try { _0x3c7f8a[_0x5f3eb5(0x14e)](PromiseRes({ 'url': _0x5aeea4 })); } catch (_0x4dd63f) { _0x3c7f8a[_0x5f3eb5(0x1ec)](0x1f4)[_0x5f3eb5(0x14e)]({ 'developer': develop, 'mess': _0x4dd63f[_0x5f3eb5(0x1cb)]() + _0x5f3eb5(0x176) }); } }); }), module[_0x77d7f1(0x195)] = router); function _0x3585() { const _0x33df63 = ['highfive', 'random', 'fluid-art-metal-paint-text-effect-maker-1118.html', 'bite', '167650bBAVcW', 'create-wonderful-graffiti-art-text-effect-1011.html', 'test', 'syariah', '/islam/jadwal-sholat', 'ova', 'create-a-3d-luxury-metallic-text-effect-for-free-1071.html', '_ga=GA1.2.1207987969.1680840450;\x20__gads=ID=b26fd0857b3cff25-22ccef1502df0050:T=1680840450:RT=1680840450:S=ALNI_MaDqL-T5KCdhDZoTOiXpOvdcwJBdA;\x20_gid=GA1.2.866837131.1681305528;\x20__gpi=UID=00000bedb580261c:T=1680840450:RT=1681378876:S=ALNI_MacS9h_essTbZighLSVsRkvI1pm8A;\x20ab_tests=%7B%7D;\x20_gat=1', '/news/v2/:type', 'megumin', 'https://berita-indo-api.vercel.app/v1/', 'text', 'handhold', 'manga', 'create-thor-logo-style-text-effect-online-1064.html', 'global', 'waifu', 'kill', '27094YbERwU', 'https://storiesig.me/api/profile/highlights?username=', 'image', 'create-christmas-candy-cane-text-effect-1056.html', 'create-a-transformer-text-effect-online-1035.html', '/textpro/:type', 'lick', '\x20instagram\x20not\x20found', '/base/:type', '/random/nekopoi', '24EWQbUc', '.\x20Report\x20this\x20error\x20to\x20Developer(Xorizn)', 'wink', '/news/gempa2', '8QwPzfj', '/image/wallpaper', 'url', '/game/caklontong', 'b32dec', '/news/covid/country/:negara', 'okezone-news', 'nomer', 'create-a-spooky-halloween-text-effect-online-1046.html', 'application/x-www-form-urlencoded', 'create-neon-devil-wings-text-effect-online-free-1014.html', 'create-realistic-vintage-style-light-bulb-1000.html', '/random/waifu-generator', 'data', '/myanimelist/:type', '4146439irHhiM', '/news/kompas/:type', 'Input\x20parameter\x20\x27npm\x27', 'cnbc-news', '\x20not\x20found,\x20available\x20types:\x20base64,\x20base32', 'profile', 'includes', 'language', '/news/cnbc/:type', 'create-a-cool-graffiti-text-on-the-wall-1010.html', '\x20not\x20found,\x20available\x20categories:\x20', 'create-neon-light-blackpink-logo-text-effect-online-1081.html', 'create-logo-style-marvel-studios-ver-metal-972.html', 'exports', 'yeet', 'null_search', 'base64', '/shorturl', 'Not\x20found\x20404\x20:(', 'special', 'cash', 'repo', 'null_username', 'vice', 'null_text', 'https://registry.npmjs.org/', 'https://storiesig.me/api/profile/publications?username=', '5007429WVwmjR', 'movie', 'highlights', 'encode', '/news/gempa', 'natural-leaves-text-effect-931.html', 'create-a-glitch-text-effect-online-free-1026.html', '24975015JRzMik', 'create-cool-wall-graffiti-text-effect-online-1009.html', 'entrepreneur', 'make-a-batman-logo-online-free-1066.html', 'kick', 'tempo-news', 'character', '/game/tebak-gambar', 'create-realistic-3d-text-effect-frozen-winter-1099.html', 'kiss', '/game/detail-hero', 'neko', '\x20not\x20found,\x20try\x20input:\x20', '/news/covid/world', 'bully', 'type', 'floor', 'create-a-3d-orange-juice-text-effect-online-1084.html', '/image/wallpaperflare', 'sfw', 'username', 'join', 'add\x20encode/decode\x20parameters', '/random/darkjokes', 'create-logo-style-marvel-studios-online-971.html', 'pornhub-style-logo-online-generator-free-977.html', 'get', 'hologram-color-3d-text-effect-generator-online-1117.html', '905076ZRCTEP', 'awoo', 'text2', 'post', 'npm', 'toString', 'create-blackpink-s-born-pink-album-theme-logo-online-1092.html', '*/*', 'create-layered-text-effects-online-free-1032.html', '16WTYrFL', '/news/rumahkeadilan', 'negara', 'create-glitch-text-effect-style-tik-tok-983.html', '/simsimi', 'terpopuler', 'create-blackpink-logo-style-online-1001.html', 'republika-news', 'matrix-style-text-effect-online-884.html', 'halloween-fire-text-effect-940.html', 'bbc-news', 'b32enc', '\x20not\x20found,\x20available\x20types:\x20', 'Input\x20number,\x20not\x20a\x20string!', 'bypopularity', 'png', 'message', 'cnn-news', 'query', 'send', '/image/pinterest', 'slap', 'https://textpro.me/', 'lifestyle', 'https://storiesig.me/api/profile/info?username=', '/myanimelist/topanime/:type', 'online-thunder-text-effect-generator-1031.html', 'poke', 'base32', 'status', '/islam/surah', 'params', '8lpkCMT', 'blowjob', 'lang', 'nsfw', '/stalk/github/:type', 'new-year-celebration-3d-gold-text-effect-1102.html', 'b64enc', 'trap', 'cry', '40jyUqME', 'create-3d-avengers-logo-online-974.html', 'market', 'airing', '/random/sfw', 'create-impressive-glitch-text-effects-online-1027.html', 'https://api.simsimi.vn/v1/simtalk', 'upcoming', 'create-3d-multicolor-paint-text-effect-online-1114.html', 'type\x20', 'search', 'Mozilla/5.0\x20(Windows\x20NT\x2010.0;\x20Win64;\x20x64;\x20rv:109.0)\x20Gecko/20100101\x20Firefox/111.0', 'create-space-3d-text-effect-online-985.html', 'topanime', '78ovkMJp', 'ice-cold-text-effect-862.html', 'create-luxury-3d-crystal-text-effects-online-1116.html', '256134CAYDYS', 'smile', 'cuddle', 'anime', '\x20kompas\x20not\x20found', 'length', 'null_url', 'create-a-sketch-text-effect-online-1044.html', 'categories\x20', 'create-berry-text-effect-online-free-1033.html', 'create-3d-deep-sea-metal-text-effect-online-1053.html', 'key', 'wave', 'elegant-white-gold-3d-text-effect-online-free-1070.html', 'json', 'https://tinyurl.com/api-create.php?url=', 'decode', 'https://storiesig.me/api/profile/cash?username=', 'create-a-futuristic-technology-neon-light-text-effect-1006.html', 'news', 'story']; _0x3585 = function () { return _0x33df63; }; return _0x3585(); }
+const mess = {
+  null_api: {
+    developer: develop,
+    mess: "Input parameter 'apikey'"
+  },
+  null_url: {
+    developer: develop,
+    mess: "Input parameter 'url'"
+  },
+  null_username: {
+    developer: develop,
+    mess: "Input parameter 'username'"
+  },
+  null_search: {
+    developer: develop,
+    mess: "Input parameter 'search'"
+  },
+  null_icon: {
+    developer: develop,
+    mess: "Input parameter 'icon'"
+  },
+  null_user: {
+    developer: develop,
+    mess: "Input parameter 'user'"
+  },
+  null_bgurl: {
+    developer: develop,
+    mess: "Input parameter 'bgurl'"
+  },
+  null_name: {
+    developer: develop,
+    mess: "Input parameter 'name'"
+  },
+  null_gcname: {
+    developer: develop,
+    mess: "Input parameter 'gcname'"
+  },
+  null_picurl: {
+    developer: develop,
+    mess: "Input parameter 'picurl'"
+  },
+  null_avatar: {
+    developer: develop,
+    mess: "Input parameter 'avatar'"
+  },
+  null_gcicon: {
+    developer: develop,
+    mess: "Input parameter 'gcicon'"
+  },
+  null_iminator: {
+    developer: develop,
+    mess: "Input parameter 'iminator'"
+  },
+  null_text: {
+    developer: develop,
+    mess: "Input parameter 'text'"
+  },
+  null_text2: {
+    developer: develop,
+    mess: "Input parameter 'text2'"
+  },
+  null_mem: {
+    developer: develop,
+    mess: 'Input parameter number of mem'
+  },
+  null_nomer: {
+    developer: develop,
+    mess: "Input parameter 'nomer'"
+  },
+  is_url: {
+    developer: develop,
+    mess: 'Insert url!'
+  }
+}
+
+router.get('/base/:type', async (req, res, next) => {
+  try {
+    const type = req.params.type,
+      encode = req.query.encode,
+      decode = req.query.decode;
+
+    if (type == 'base64' && encode) {
+      var hasil = await Base("b64enc", encode)
+      res.json(PromiseRes(hasil)).status(200)
+    } else if (type == 'base64' && decode) {
+      var hasil = await Base("b64dec", decode)
+      res.json(PromiseRes(hasil)).status(200)
+    } else if (type == 'base32' && encode) {
+      var hasil = await Base('b32enc', encode)
+      res.json(PromiseRes(hasil)).status(200)
+    } else if (type == 'base32' && decode) {
+      var hasil = await Base('b32dec', decode)
+      res.json(PromiseRes(hasil)).status(200)
+    } else if (!(encode || decode)) {
+      res.json({ developer: develop, message: 'add encode/decode parameters' })
+    } else {
+      res.json({ developer: develop, mess: `type ${type} not found, available types: base64, base32` })
+    }
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+
+//==================================NEWS==================================\\
+router.get('/news/gempa', async (req, res, next) => {
+  try {
+    let hasil = await InfoGempa()
+    res.json(PromiseRes(hasil)).status(200)
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+router.get('/news/v2/:type', async (req, res, next) => {
+  try {
+    const type = req.params.type,
+      tipes = ['cnn-news', 'cnbc-news', 'republika-news', 'tempo-news', 'kumparan-news', 'okezone-news', 'bbc-news', 'vice', 'suara', 'voa']
+    if (!tipes.includes(type)) return res.json({ developer: develop, mess: type + ` not found, try input: ${tipes.join(', ')}` })
+
+    let { data } = await axios.get('https://berita-indo-api.vercel.app/v1/' + type)
+    res.json(PromiseRes(data.data)).status(200)
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+router.get('/news/gempa2', async (req, res, next) => {
+  try {
+    let hasil = await InfoGempa_2()
+    res.json(PromiseRes(hasil)).status(200)
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+router.get('/news/covid/world', async (req, res, next) => {
+  try {
+    let hasil = await Covid_World()
+    res.json(PromiseRes(hasil)).status(200)
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+router.get('/news/covid/country/:negara', async (req, res, next) => {
+  try {
+    const negara = req.params.negara;
+
+    let hasil = await Covid_Country(negara)
+    res.json(PromiseRes(hasil)).status(200)
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+router.get('/news/kompas/:type', async (req, res, next) => {
+  try {
+    const type = req.params.type,
+      tipes = ['global', 'news', 'terpopuler'];
+    if (tipes.includes(type)) return res.json({ developer: develop, mess: type + ' kompas not found' })
+
+    if (type === 'global') {
+      var hasil = await Kompas_Global()
+    } else if (type === 'news') {
+      var hasil = await Kompas_News()
+    } else if (type === 'terpopuler') {
+      var hasil = await Kompas_Terpopuler()
+    }
+    res.json(PromiseRes(hasil)).status(200)
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+router.get('/news/cnbc/:type', async (req, res, next) => {
+  try {
+    const type = req.params.type,
+      list = ['news', 'market', 'investment', 'entrepreneur', 'syariah', 'tech', 'lifestyle'];
+    if (!list.includes(type)) return res.json({ developer: develop, mess: `categories ${type} not found, available categories: ${list.join(', ')}` });
+
+    let hasil = await CnBc(type)
+    res.json(PromiseRes(hasil)).status(200)
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+router.get('/news/rumahkeadilan', async (req, res, next) => {
+  try {
+    let hasil = await RumahKeadilan()
+    res.json(PromiseRes(hasil)).status(200)
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+router.get('/news/tixid', async (req, res, next) => {
+  try {
+    let hasil = await TixID()
+    res.json(PromiseRes(hasil)).status(200)
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+//==================================STALK==================================\\
+router.get('/stalk/instagram/:type', async (req, res, next) => {
+  try {
+    const user = req.query.username,
+      type = req.params.type,
+      tipes = ['profile', 'story', 'post', 'highlights', 'cash'];
+    if (!tipes.includes(type)) return res.json({ developer: develop, mess: type + ' instagram not found' })
+    if (!user) return res.json(mess.null_username)
+    const anya = { headers: { accept: '*/*', 'cookie': '_ga=GA1.2.1207987969.1680840450; __gads=ID=b26fd0857b3cff25-22ccef1502df0050:T=1680840450:RT=1680840450:S=ALNI_MaDqL-T5KCdhDZoTOiXpOvdcwJBdA; _gid=GA1.2.866837131.1681305528; __gpi=UID=00000bedb580261c:T=1680840450:RT=1681378876:S=ALNI_MacS9h_essTbZighLSVsRkvI1pm8A; ab_tests=%7B%7D; _gat=1', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/111.0' } }
+    if (type === 'profile') {
+      var { data } = await axios.get('https://storiesig.me/api/profile/info?username=' + user, anya)
+    } else if (type === 'story') {
+      var data = await StoryIG(user)
+    } else if (type === 'post') {
+      var { data } = await axios.get('https://storiesig.me/api/profile/publications?username=' + user, anya)
+    } else if (type === 'highlights') {
+      var { data } = await axios.get('https://storiesig.me/api/profile/highlights?username=' + user, anya)
+    } else if (type === 'cash') {
+      var { data } = await axios.get('https://storiesig.me/api/profile/cash?username=' + user, anya)
+    }
+    res.json(PromiseRes(data)).status(200)
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+router.get('/stalk/github/:type', async (req, res, next) => {
+  try {
+    const user = req.query.username,
+      type = req.params.type,
+      tipes = ['profile', 'repo'];
+    if (!tipes.includes(type)) return res.json({ developer: develop, mess: type + ' github not found' })
+    if (!user) return res.json(mess.null_username)
+    if (type === 'profile') {
+      var hasil = await GithubStalk(user)
+    } else if (type === 'repo') {
+      var hasil = await GithubRepo(user)
+    }
+    res.json(PromiseRes(hasil)).status(200)
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+router.get('/stalk/npm', async (req, res, next) => {
+  try {
+    const query = req.params.npm;
+
+    if (!query) return res.json({ developer: develop, mess: "Input parameter 'npm'" })
+
+    let { data } = await axios.get('https://registry.npmjs.org/' + query)
+    res.json(PromiseRes(data)).status(200)
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+//==================================ANIMEEEEEEEEEEE==================================\\
+router.get('/myanimelist/:type', async (req, res, next) => {
+  try {
+    const search = req.query.search,
+      type = req.params.type,
+      tipes = ['character', 'manga', 'anime', 'topanime'];
+
+    if (!tipes.includes(type)) return res.json({ developer: develop, mess: type + ' myanimelist not found' })
+
+    if (type === 'character') {
+      if (!search) return res.json(mess.null_search)
+      var hasil = await MalSearchCharacter(search)
+    } else if (type === 'manga') {
+      if (!search) return res.json(mess.null_search)
+      var hasil = await MalSearchManga(search)
+    } else if (type === 'anime') {
+      if (!search) return res.json(mess.null_search)
+      var hasil = await MalSearchAnime(search)
+    } else if (type === 'topanime') {
+      var hasil = await MalUpcoming()
+    }
+    res.json(PromiseRes(hasil)).status(200)
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+router.get('/myanimelist/topanime/:type', async (req, res, next) => {
+  try {
+    const type = req.params.type,
+      tipes = ['airing', 'upcoming', 'tv', 'movie', 'ova', 'ona', 'special', 'bypopularity', 'favorite'];
+    if (!tipes.includes(type)) return res.json({ developer: develop, mess: type + ' myanimelist not found' })
+
+    let hasil = await MalUpcoming(type)
+    res.json(PromiseRes(hasil)).status(200)
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+//==================================RANDOM==================================\\
+router.get('/random/quotes-anime', async (req, res, next) => {
+  try {
+    let hasil = await QuotesAnime()
+    res.json(PromiseRes(hasil)).status(200)
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+router.get('/random/waifu-generator', async (req, res, next) => {
+  try {
+    let hasil = await WaifuGenerator()
+    res.json(PromiseRes(hasil)).status(200)
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+router.get('/random/nekopoi', async (req, res, next) => {
+  try {
+    let hasil = await NekopoiDcVideo()
+    res.json(PromiseRes(hasil)).status(200)
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+router.get('/random/hentai', async (req, res, next) => {
+  try {
+    let hasil = await Hentai()
+    res.json(PromiseRes(hasil)).status(200)
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+router.get('/random/darkjokes', async (req, res, next) => {
+  try {
+    let hasil = await DarkJokes()
+    let buffer = await GetBuff(hasil)
+    res.type('png').send(buffer);
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+router.get('/random/waifu', async (req, res, next) => {
+  try {
+    const type = req.query.type,
+      listtp = ['nsfw', 'sfw'],
+      tipes = type ? type : 'sfw'
+    if (!listtp.includes(tipes)) return res.json({
+      developer: develop, mess: `type ${type} not found, available types: ${listtp.join(', ')}`
+    })
+
+    let hasil = await Waifu(tipes)
+    res.json(PromiseRes(hasil)).status(200)
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+router.get('/random/sfw', async (req, res, next) => {
+  try {
+    const type = req.query.type,
+      ctgr = ['waifu', 'neko', 'shinobu', 'megumin', 'bully', 'cuddle', 'cry', 'hug', 'awoo', 'kiss', 'lick', 'pat', 'smug', 'bonk', 'yeet', 'blush', 'smile', 'wave', 'highfive', 'handhold', 'nom', 'bite', 'glomp', 'slap', 'kill', 'kick', 'happy', 'wink', 'poke', 'dance', 'cringe'],
+      tipes = type ? type : 'waifu'
+    if (!ctgr.includes(tipes)) return res.json({
+      developer: develop, mess: `type ${type} not found, available types: ${ctgr.join(', ')}`
+    })
+
+    let hasil = await Sfw(tipes)
+    let buffer = await GetBuff(hasil.url)
+    res.type('png').send(buffer);
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+router.get('/random/nsfw', async (req, res, next) => {
+  try {
+    const type = req.query.type,
+      ctgr = ['waifu', 'neko', 'trap', 'blowjob'],
+      tipes = type ? type : 'waifu'
+
+    if (!ctgr.includes(tipes)) return res.json({
+      developer: develop, mess: `type ${type} not found, available types: ${ctgr.join(', ')}`
+    })
+
+    let hasil = await Nsfw(tipes)
+    let buffer = await GetBuff(hasil.url)
+    res.type('png').send(buffer);
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+//===========IMAGE==========\\
+router.get('/image/pinterest/v2', async (req, res, next) => {
+  try {
+    const search = req.query.search;
+
+    if (!search) return res.json(mess.null_search)
+
+    let hasil = await Pinterest(search)
+    let rdm = hasil[Math.floor(hasil.length * Math.random())];
+    let buffer = await GetBuff(rdm)
+    res.type('png').send(buffer);
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+router.get('/image/pinterest', async (req, res, next) => {
+  try {
+    const search = req.query.search;
+
+    if (!search) return res.json(mess.null_search)
+
+    let hasil = await Pinterest(search)
+    res.json(PromiseRes(hasil)).status(200)
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+router.get('/image/wallpaperflare', async (req, res, next) => {
+  try {
+    const search = req.query.search;
+
+    if (!search) return res.json(mess.null_search)
+
+    let hasil = await WallpaperFlare(search)
+    res.json(PromiseRes(hasil)).status(200)
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+router.get('/image/wallpaper', async (req, res, next) => {
+  try {
+    const search = req.query.search;
+
+    if (!search) return res.json(mess.null_search)
+
+    let hasil = await Wallpaper(search)
+    res.json(PromiseRes(hasil)).status(200)
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+
+//===========TEXTPRO===========\\
+router.get('/textpro/:type', async (req, res, next) => {
+  try {
+    const type = req.params.type,
+      text = req.query.text,
+      anu = 'https://textpro.me/';
+
+    if (!text) return res.json(mess.null_text)
+
+    let link
+    if (/holo/.test(type)) link = anu + 'hologram-color-3d-text-effect-generator-online-1117.html'
+    if (/fluid/.test(type)) link = anu + 'fluid-art-metal-paint-text-effect-maker-1118.html'
+    if (/deep-sea/.test(type)) link = anu + 'create-3d-deep-sea-metal-text-effect-online-1053.html' //de
+    if (/thunder2/.test(type)) link = anu + 'online-thunder-text-effect-generator-1031.html' //thund
+    if (/thunder/.test(type)) link = anu + 'create-thunder-text-effect-online-881.html'
+    if (/matrix/.test(type)) link = anu + 'matrix-style-text-effect-online-884.html'
+    if (/technology/.test(type)) link = anu + 'create-a-futuristic-technology-neon-light-text-effect-1006.html'
+    if (/devilwings/.test(type)) link = anu + 'create-neon-devil-wings-text-effect-online-free-1014.html'
+    if (/blackpink2/.test(type)) link = anu + 'create-neon-light-blackpink-logo-text-effect-online-1081.html'
+    if (/glitch/.test(type)) link = anu + 'create-impressive-glitch-text-effects-online-1027.html'
+    if (/whitegold/.test(type)) link = anu + 'elegant-white-gold-3d-text-effect-online-free-1070.html'
+    if (/ice/.test(type)) link = anu + 'ice-cold-text-effect-862.html'
+    if (/frozen/.test(type)) link = anu + 'create-realistic-3d-text-effect-frozen-winter-1099.html'
+    if (/candy/.test(type)) link = anu + 'create-christmas-candy-cane-text-effect-1056.html'
+    if (/bokeh/.test(type)) link = anu + 'bokeh-text-effect-876.html'
+    if (/holographic/.test(type)) link = anu + 'holographic-3d-text-effect-975.html'
+    if (/orange/.test(type)) link = anu + 'create-a-3d-orange-juice-text-effect-online-1084.html'
+    if (/berry/.test(type)) link = anu + 'create-berry-text-effect-online-free-1033.html'
+    if (/comic/.test(type)) link = anu + 'create-3d-comic-text-effects-online-1091.html'
+    if (/luxury/.test(type)) link = anu + 'create-a-3d-luxury-metallic-text-effect-for-free-1071.html'
+    if (/blackpink/.test(type)) link = anu + 'create-blackpink-logo-style-online-1001.html'
+    if (/cloud/.test(type)) link = anu + 'create-a-cloud-text-effect-in-the-sky-online-997.html'
+    if (/newyear/.test(type)) link = anu + 'new-year-celebration-3d-gold-text-effect-1102.html'
+    if (/multicolor/.test(type)) link = anu + 'create-3d-multicolor-paint-text-effect-online-1114.html'
+    if (/halloween/.test(type)) link = anu + 'halloween-fire-text-effect-940.html'
+    if (/batman/.test(type)) link = anu + 'make-a-batman-logo-online-free-1066.html'
+    if (/transformer/.test(type)) link = anu + 'create-a-transformer-text-effect-online-1035.html'
+    if (/blackpink3/.test(type)) link = anu + 'create-a-blackpink-logo-decorated-with-roses-online-free-1080.html'
+    if (/crystal/.test(type)) link = anu + 'create-luxury-3d-crystal-text-effects-online-1116.html'
+    if (/graffiti/.test(type)) link = anu + 'create-wonderful-graffiti-art-text-effect-1011.html'
+    if (/pencil/.test(type)) link = anu + 'create-a-sketch-text-effect-online-1044.html'
+    if (/paper-cut/.test(type)) link = anu + 'create-art-paper-cut-text-effect-online-1022.html'
+
+    let hasil = await textpro(link, [text])
+    let buffer = await GetBuff(hasil.image)
+    res.type('png').send(buffer);
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+router.get('/textpro/v2/:type', async (req, res, next) => {
+  try {
+    const type = req.params.type,
+      text = req.query.text,
+      text2 = req.query.text2,
+      anu = 'https://textpro.me/';
+
+    if (!text) return res.json(mess.null_text)
+    if (!text2) return res.json(mess.null_text2)
+
+    let link
+    if (/glitch/.test(type)) link = anu + 'create-glitch-text-effect-style-tik-tok-983.html'
+    if (/glitch2/.test(type)) link = anu + 'create-a-glitch-text-effect-online-free-1026.html'
+    if (/vintage/.test(type)) link = anu + 'create-realistic-vintage-style-light-bulb-1000.html'
+    if (/blackpink/.test(type)) link = anu + 'create-blackpink-s-born-pink-album-theme-logo-online-1092.html'
+    if (/thor/.test(type)) link = anu + 'create-thor-logo-style-text-effect-online-1064.html'
+    if (/graffiti/.test(type)) link = anu + 'create-a-cool-graffiti-text-on-the-wall-1010.html'
+    if (/graffiti2/.test(type)) link = anu + 'create-cool-wall-graffiti-text-effect-online-1009.html'
+    if (/pornhub/.test(type)) link = anu + 'pornhub-style-logo-online-generator-free-977.html'
+    if (/natural/.test(type)) link = anu + 'natural-leaves-text-effect-931.html'
+    if (/marvel/.test(type)) link = anu + 'create-logo-style-marvel-studios-online-971.html'
+    if (/marvel2/.test(type)) link = anu + 'create-logo-style-marvel-studios-ver-metal-972.html'
+    if (/avengers/.test(type)) link = anu + 'create-3d-avengers-logo-online-974.html'
+    if (/space/.test(type)) link = anu + 'create-space-3d-text-effect-online-985.html'
+    if (/spooky/.test(type)) link = anu + 'create-a-spooky-halloween-text-effect-online-1046.html'
+    if (/layered/.test(type)) link = anu + 'create-layered-text-effects-online-free-1032.html'
+
+    let hasil = await textpro(link, [text, text2])
+    let buffer = await GetBuff(hasil.image)
+    res.type('png').send(buffer);
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+//================GAME===================\\
+router.get('/game/tebak-gambar', async (req, res, next) => {
+  try {
+    let { data } = await axios.get('https://raw.githubusercontent.com/Xorizn/database-api/main/fun/tebak-gambar.json')
+    let hasil = data[Math.floor(data.length * Math.random())]
+    res.json(PromiseRes(hasil)).status(200)
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+router.get('/game/caklontong', async (req, res, next) => {
+  try {
+    let { data } = await axios.get('https://raw.githubusercontent.com/Xorizn/database-api/main/fun/caklontong.json')
+    let hasil = data[Math.floor(data.length * Math.random())]
+    res.json(PromiseRes(hasil)).status(200)
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+router.get('/game/list-hero-ml', async (req, res, next) => {
+  try {
+    let hasil = await ListHero()
+    res.json(PromiseRes(hasil)).status(200)
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+router.get('/game/detail-hero', async (req, res, next) => {
+  try {
+    const search = req.query.search;
+
+    if (!search) return res.json(mess.null_search);
+
+    let hasil = await Hero(search)
+    if (hasil.mess) return res.status(404).json({ developer: develop, mess: `Not found 404 :(` })
+    res.json(PromiseRes(hasil)).status(200)
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+//SIMSIMI
+router.get('/simsimi', async (req, res, next) => {
+  try {
+    const text = req.query.text,
+      lang = req.query.lang,
+      key = req.query.key;
+
+    if (!text) return res.json(mess.null_text);
+
+    let { data } = await axios.post('https://api.simsimi.vn/v1/simtalk', {
+      text: text,
+      lc: lang ? lang : 'id',
+      key: key ? key : ''
+    }, {
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      }
+    })
+    let rapi = {
+      language: data.language,
+      text: data.text,
+      message: data.message,
+      time: data.time
+    }
+    res.json(PromiseRes(rapi)).status(200)
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+//=============ISLAM============\\
+router.get('/islam/surah', async (req, res, next) => {
+  try {
+    const nomer = req.query.nomer;
+
+    if (!nomer) return res.json(mess.null_nomer);
+
+    let no = Number(nomer)
+    if (isNaN(no)) return res.json({ developer: develop, mess: 'Input number, not a string!' })
+    let hasil = await Surah(no)
+    res.json(PromiseRes(hasil)).status(200)
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+router.get('/islam/jadwal-sholat', async (req, res, next) => {
+  try {
+    const nomer = req.query.nomer;
+
+
+    let hasil = await JadwalSholat(nomer)
+    res.json(PromiseRes(hasil)).status(200)
+  } catch (err) {
+    res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+  }
+})
+//SHORT URL
+router.get('/shorturl', async (req, res, next) => {
+  const url = req.query.url;
+  if (!url) return res.json(mess.null_url)
+  request(`https://tinyurl.com/api-create.php?url=${url}`, function (error, response, body) {
+    try {
+      res.json(PromiseRes({ url: body }))
+    } catch (err) {
+      res.status(500).json({ developer: develop, mess: `${err.toString()}. Report this error to Developer(Xorizn)` })
+    }
+  })
+})
+
+module.exports = router
