@@ -13,6 +13,15 @@
 
 # List API
 
+- [NEWS](#news)
+- [STALK](#stalk)
+- [ANIME](#anime)
+- [RANDOM](#random)
+- [IMAGES](#images)
+- [TEXT-PRO](#text-pro)
+- [GAME](#game)
+- [ISLAMIC-AND-OTHER](#islamic-and-other)
+
 ### News
 ```http
   GET api/news/:param
@@ -39,7 +48,71 @@
 | :----------             | :-------   | :-------   |:--      | :--         |
 | `/instagram/:type`  | `type:` *profile*, *story*, *post*, *highlights*, *cash* | `username` | GET | [`=>`](https://xorizn-apis-v1.vercel.app/api/stalk/instagram/profile?username=farrhnn)
 | `/github/:type`  | `type:` *profile*, *repo* | `username` | GET | [`=>`](https://xorizn-apis-v1.vercel.app/api/stalk/github/profile?username=xorizn)
-| `/npm`  |  | `packages` | GET | [`=>`](https://xorizn-apis-v1.vercel.app/api/stalk/npm?packages=nhentai)
+| `/npm/v2`  |  | `packages` | GET | [`=>`](https://xorizn-apis-v1.vercel.app/api/stalk/npm/v2?packages=nhentai)
+
+### Anime
+> This anime search api's, include /api
+
+| Param                   | req param  | req query  | Method  | Example     |
+| :----------             | :-------   | :-------   |:--      | :--         |
+| `/myanimelist/:type` | `type:` *character*, *manga*, *anime*, *topanime* | `search` | GET | [`=>`](https://xorizn-apis-v1.vercel.app/api/myanimelist/character?search=naruto)
+| `/myanimelist/topanime/:type` | `type:` *airing*, *upcoming*, *tv*, *movie*, *ova*, *ona*, *special*, *bypopularity*, *favorite* |  | GET | [`=>`](https://xorizn-apis-v1.vercel.app/api/myanimelist/topanime/airing)
+
+### Random
+```http
+  GET api/random/:param
+```
+
+| Param                   | req query  | Method | Example     |
+| :----------             | :-------   | :--    | :--         |
+| `/quotes-anime` | | GET | [`=>`](https://xorizn-apis-v1.vercel.app/api/random/quotes-anime)
+| `/waifu-generator` | | GET | [`=>`](https://xorizn-apis-v1.vercel.app/api/random/waifu-generator)
+| `/nekopoi` | | GET | [`=>`](https://xorizn-apis-v1.vercel.app/api/random/nekopoi)
+| `/darkjokes` | | GET | [`=>`](https://xorizn-apis-v1.vercel.app/api/random/darkjokes)
+| `/waifu` | `type:` *nsfw*, *sfw* | GET | [`=>`](https://xorizn-apis-v1.vercel.app/api/random/waifu?type=nsfw)
+| `/sfw` | `type:` *waifu*, *neko*, *shinobu*, *megumin*, *bully*, *cuddle*, *cry*, *hug*, *awoo*, *kiss*, *lick*, *pat*, *smug*, *bonk*, *yeet*, *blush*, *smile*, *wave*, *highfive*, *handhold*, *nom*, *bite*, *glomp*, *slap*, *kill*, *kick*, *happy*, *wink*, *poke*, *dance*, *cringe* | GET | [`=>`](https://xorizn-apis-v1.vercel.app/api/random/sfw?type=waifu)
+| `/nsfw` | `type:` *waifu*, *neko*, *trap*, *blowjob* | GET | [`=>`](https://xorizn-apis-v1.vercel.app/api/random/nsfw?type=neko)
+| `/hentai` | | GET | [`=>`](https://xorizn-apis-v1.vercel.app/api/random/hentai)
+
+### Images
+```http
+  GET api/image/:param
+```
+| Param                   | req query  | Method | Example     |
+| :----------             | :-------   | :--    | :--         |
+| `/pinterest/v2` | `search` | GET | [`=>`](https://xorizn-apis-v1.vercel.app/api/image/pinterest/v2?search=ANIME+ICON)
+| `/pinterest` | `search` | GET | [`=>`](https://xorizn-apis-v1.vercel.app/api/image/pinterest?search=ANIME+ICON)
+| ~~`/wallpaperflare`~~ | `search` | GET | [`=>`](https://xorizn-apis-v1.vercel.app/api/image/wallpaperflare?search=anime) This feature is getting error 504
+| `/wallpaper` | `search` | GET | [`=>`](https://xorizn-apis-v1.vercel.app/api/image/wallpaper?search=anime)
+
+
+### Text Pro
+> This is text maker/generator api's
+
+| Param                   | req param | req query | Method | Example     |
+| :----------             | :-------  | :-------- | :--    | :--         |
+| `/textpro/:type` | `type:` *holo*, *fluid*, *deep-sea*, *thunder2*, *thunder*, *matrix*, *technology*, *devilwings*, *blackpink2*, *glitch*, *whitegold*, *ice*, *frozen*, *candy*, *bokeh*, *holographic*, *orange*, *berry*, *comic*, *luxury*, *blackpink*, *cloud*, *newyear*, *multicolor*, *halloween*, *batman*, *transformer*, *blackpink3*, *crystal*, *graffiti*, *pencil*, *paper-cut* | `text` | GET | [`=>`](https://xorizn-apis-v1.vercel.app/api/textpro/holo?text=XORIZN)
+| `/textpro/v2/:type` | `type:` *glitch* *glitch2* *vintage* *blackpink* *thor* *graffiti* *graffiti2* *pornhub* *natural* *marvel* *marvel2* *avengers* *space* *spooky* *layered* | `text` `text2` | GET | [`=>`](https://xorizn-apis-v1.vercel.app/api/textpro/v2/glitch?text=XORIZN&text2=anjas)
+
+### Game
+> Features that make you nostalgic and fun
+
+| Param                | query | Method | Example     |
+| :----------          |:-- | :--    | :--         |
+| `/game/tebak-gambar`| | GET | [`=>`](https://xorizn-apis-v1.vercel.app/api/game/tebak-gambar)
+| `/game/caklontong`| | GET | [`=>`](https://xorizn-apis-v1.vercel.app/api/game/caklontong)
+| `/game/list-hero-ml`| | GET | [`=>`](https://xorizn-apis-v1.vercel.app/api/game/list-hero-ml)
+| `/game/detail-hero`| `search` | GET | [`=>`](https://xorizn-apis-v1.vercel.app/api/game/detail-hero?search=miya)
+
+### Islamic and other
+>This feature helps our Muslim friends. and there are other features
+
+| Param                | query | Method | Example     |
+| :----------          |:----- | :--    | :--         |
+| `/islam/surah` | `nomer` | GET | [`=>`](https://xorizn-apis-v1.vercel.app/api/islam/surah?nomer=2)
+| `/islam/jadwal-sholat` | `nomer` | GET | [`=>`](https://xorizn-apis-v1.vercel.app/api/islam/jadwal-sholat?nomer=549)
+| `/shorturl` | `url` | GET | [`=>`](https://xorizn-apis-v1.vercel.app/api/shorturl?url=https://github.com/xorizn)
+| `/simsimi` | `text`, `lang:` *default id*,  `key:` *simi api* | GET | [`=>`](https://xorizn-apis-v1.vercel.app/api/simsimi?text=hello&lang=en)
 
 ## Installation
 
