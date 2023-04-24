@@ -121,7 +121,7 @@ If you want to add this project in your own machine, you can install this projec
 1. Clone this repository
 
 ```
-git clone https://github.com/Xorizn/xorizn-downloads.git
+git clone https://github.com/Xorizn/xorizn-apis.git
 ```
 
 2. Install dependencies
