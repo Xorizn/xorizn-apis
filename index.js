@@ -17,7 +17,7 @@ app.use(express.static("lib"))
 app.use('/', mainrouter)
 app.use('/api', apirouter)
 app.use(function (req, res, next) {
-  res.status(404).json({ developer: '@Xorizn', mess: `The requested URL ${req.originalUrl} was not found. Take a look at this readme link https://github.com/Xorizn/xorizn-apis#readme`, hostname: req.hostname });
+  res.redirect('https://github.com/Xorizn/xorizn-apis#readme')
 });
 
 app.listen(PORT, () => {
